@@ -1,0 +1,26 @@
+.start {/*header*/
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: auto ;
+}
+
+.social{ /* img / meus icones da media social*/
+    width: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline;
+}
+.end{ /*footer*/
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: right;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
