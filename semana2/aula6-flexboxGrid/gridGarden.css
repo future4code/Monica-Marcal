@@ -1,0 +1,343 @@
+/*Bem-vindo ao Grid Garden, onde você escreve código CSS para cultivar seu jardim de cenouras! Regue apenas as áreas que têm cenouras usando a propriedade grid-column-start.*/
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column-start: 3; /*grid-column-start: 3; irá regar a área começando na 3ª linha vertical da grade, que é outra maneira de dizer a 3ª borda vertical da esquerda na grade.*/
+}
+
+/**/
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #poison {
+    grid-column-start:5; /*começa 1ª linha vertical da grade e terminam na 5ª. */
+  }
+
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column-start: 1;
+    grid-column-end:4; /*começa 1ª linha vertical da grade e terminam na 4ª.**/
+  }
+
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column-start: 5;
+    grid-column-end: 2; /*começa 5ª linha vertical até a 2ª definindo um valor inferior a 5*/
+  }
+
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column-start: 1;
+    grid-column-end: -2;/**/
+  }
+
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #poison {
+    grid-column-start:-3;/*defini-lo como -3 para especificar a primeira linha de grade da direita.*/
+  }
+
+
+
+  /*Em vez de definir um item de grade com base nas posições inicial e final das linhas de grade, você pode defini-lo com base na largura de coluna desejada usando a palavra-chave span. Lembre-se de que a amplitude só funciona com valores positivos.*/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column-start: 2;
+    grid-column-end: span 2;/*definindo com base na largura de coluna desejada usando a palavra-chave span*/
+  }
+
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column-start: 1;
+    grid-column-end: span 5;/**/
+  }
+
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+      grid-column-end: 6;
+      grid-column-start: span 3;/**/
+  }
+
+
+  /*Digitar tanto grade-coluna-início quanto grade-coluna-final todas as vezes pode ser cansativo. Felizmente, grid-column é uma propriedade abreviada que pode aceitar ambos os valores ao mesmo tempo, separados por uma barra.
+
+Por exemplo, grade-coluna: 2/4; irá definir o item de grade para começar na 2ª linha de grade vertical e terminar na 4ª linha de grade.*/
+
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column: 4/55; /*Não entendi o porque funcionou com 55*/
+  }
+
+/**/
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column: span 3/5;
+  }
+
+
+
+  /*Uma das coisas que separa grades CSS do Flexbox é que você pode facilmente posicionar itens em duas dimensões: colunas e linhas. grid-row-start funciona da mesma forma que grid-column-start só que pelo eixo vertical*/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-row-start: 3; /**/
+  }
+ 
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-row: span 3/6; /*forma abreviada do grid-row*/
+  }
+  
+/**/
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #poison {
+    grid-column-start:2;
+    grid-row-end: 6;
+  }
+
+/**/
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column: span 4/6; /*abrangendo áreas maiores dentro da grade*/
+    grid-row:span 5/6; /*abrangendo áreas maiores dentro da grade*/
+  }
+
+
+  /*Se digitar ambos grid-column e grid-row é muito para você, há ainda outra propriedade curta para isso. grid-area aceita quatro valores separados por barras: grid-row-start, grid-column-start, grid-row-end, seguido por grid-column-end.
+
+  Um exemplo disso poderia ser grid-area: 1 / 1 / 3 / 6;*/
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-area : 1/2/4/6;/**/
+  }
+
+  /**/
+
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water-1 {
+    grid-area: 1 / 4 / 6 / 5;
+  }
+  
+  #water-2 {
+    grid-area: 2 / 3 / 5 / 6; /**/
+  }
+
+  /*Se um item da grade não é explicitamente colocada com grid-area, grid-column, grid-row, etc., eles são colocados automaticamente de acordo com a ordem no código fonte. A gente pode mudar isso usando a propriedade order, que é uma das vantagens das grades ao invés de leiautes baseados em tabelas.
+
+    Por padrão, todos os itens da grade tem um order de 0, mas isso pode ser definido para qualquer valor positivo ou negativo, similar a z-index.*/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  .water {
+    order: 0;
+  }
+  
+  #poison {
+    order: 6;/**/
+  }
+
+  /**/
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  .water {
+    order: 0;
+  }
+  
+  .poison {
+    order: -6; /*alternando elemento*/
+  }
+
+
+/*Até esse ponto, você teve sua horta com uma grade definida com cinco colunas, cada uma com 20% da largura total, e cinco linhas, cada uma com 20% da altura total.
+
+Isso foi feito com as regras grid-template-columns: 20% 20% 20% 20% 20%; e grid-template-rows: 20% 20% 20% 20% 20%; Cada regra tem cinco valores que criam cinco colunas, que tem 20% do total da largura da sua horta.
+
+Mas você pode definir a grade da forma que quiser. Dê a grid-template-columns um novo valor para irrigar suas cenouras. Você desejará definir a largura da sua 1ª coluna para 50%.*/
+#garden {
+    display: grid;
+    grid-template-columns: 50%; /**/
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+/*Especificar um monte de colunas com larguras idênticas pode ficar tedioso. Felizmente há uma função repeat para nos ajudar com isso.
+
+Por exemplo, definimos anteriormente cinco colunas de 20% de largura na regra grid-template-columns: 20% 20% 20% 20% 20%;. Isso pode ser simplificado como grid-template-columns: repeat(5, 20%); */
+#garden {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);/*Crie oito colunas com 12.5% de largura cada. */
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+#water {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+ /*grid-template-columns não aceita apenas valores em porcentagens, mas também aceita unidade de medidas como pixels e ems. Você pode inclusive misturar diferentes unidades junto.*/
+ #garden {
+    display: grid;
+    grid-template-columns: 100px 3em 40%; /*definiu três colunas de 100px, 3em, e 40% respectivamente.*/
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
+/*CSS Grid também introduz uma nova medida, a fracionário fr. Cada medida fr aloca um pedaço do espaço disponível. Por exemplo, se dois elementos estão definidos para 1fr e 3fr respectivamente, o espaço é dividido em 4 partes iguais; o primeiro elemento ocupa 1/4 e o segundo elemento 3/4 do espaço restante.*/
+#garden {
+    display: grid;
+    grid-template-columns:1.6fr 8fr;/*Criei duas colunas com essas larguras usando a unidade fr*/
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
+  /*Quando as colunas são especificadas com pixels, porcentagens, ou ems, qualquer outra coluna definida com fr vai dividir o espaço que sobrou.*/
+#garden {
+    display: grid;
+    grid-template-columns:50px 1fr 1fr 1fr 50px; /*uma coluna de 50 pixels na esquerda, uma coluna de 50 pixels na direita, Com grid-template-columns, crie essas duas colunas, e use fr para fazer mais três colunas que ocuparão o espaço sobrando no meio. */
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+#water {
+    grid-area: 1 / 1 / 6 / 2;
+  }
+  
+#poison {
+    grid-area: 1 / 5 / 6 / 6;
+  }
+
+  /*Agora há uma coluna de 75 pixels de ervas daninhas no lado esquerdo da sua horta. 3/5 do espaço remanescente está crescendo cenouras, enquanto 2/5 tem sido envadido por ervas daninhas.*/
+#garden {
+    display: grid;
+    grid-template-columns: 75px 3fr 2fr; /*uma coluna de 75 pixels, 3/5 do espaç e 2/5 */
+    grid-template-rows: 100%;
+  }
+
+  /*grid-template-rows funciona da mesma forma que grid-template-columns.
+    Use grid-template-rows para irrigar toda sua horta menos os 50 pixels do topo. Note que a água está definida para irrigar apenas sua 5ª linha, então você precisará criar 5 linhas no total*/
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50px 0fr 0fr 0fr ;/**/
+      
+      }
+      
+#water {
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+    }
+
+    /*Por exemplo, grid-template: 50% 50% / 200px; irá criar uma grade com duas linhas com 50% cada, e uma coluna que tem 200 pixels de largura.
+    Tente usar grid-template para irrigar uma área que inclui 60% do topo e 200px da esquerda da sua horta.*/
+    #garden {
+        display: grid;
+        grid-template: 60% /200px; /**/
+      
+      }
+      
+      #water {
+        grid-column: 1;
+        grid-row: 1;
+      }    
+
+      
+      /* Aqui você tem 50 pixels no rodapé da sua horta e o resto preenchido com cenouras. Infelizmente, 20% das suas cenouras foram danificadas com ervas daninhas. Use CSS grid uma última vez para tratar sua horta.*/
+      #garden {
+        display: grid;
+        grid-template: 1fr 50px / 20% 80%; /**/
+      }
