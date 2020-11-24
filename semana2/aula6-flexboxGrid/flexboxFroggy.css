@@ -1,0 +1,201 @@
+/*Exercicio do site Flexbox - Froggy */
+/*[Flexbox Froggy](https://flexboxfroggy.com/)*/
+/*1. O site acima é um jogo que foi criado com o objetivo de facilitar o ensino de `flexbox` para os desenvolvedores. Comece fazendo todas as fases desse jogo que constam em colocar uns sapinhos na posição solicitada.*/
+
+
+/*Espaçamento entre os itens*/
+#pond {
+    display: flex;
+    justify-content: flex-end; /*O item sapo é alinhados ao lado direito do contêiner.*/
+  
+}
+
+#pond {
+    display: flex;
+    justify-content:center; /*centralizou os dois itens sapos ao mesmo tempo dentro das nenúfares, alinhados no centro do contêiner.*/
+}
+
+#pond {
+    display: flex;
+    justify-content: space-around;/*Colocando os itens sapos com espaçamento igual ao redor deles.*/
+}
+
+#pond {
+    display: flex;
+    justify-content: space-between; /*Alinhou o ultimo sapo, com espaçamento igual entre eles.*/
+}
+
+
+
+/*Alinhamento entre os itens*/
+#pond {
+    display: flex;
+    align-items:flex-end; /*os itens sapos são alinhados ao fundo do contêiner.*/
+}
+
+#pond {
+    display: flex;
+    justify-content:center;/*alinhou o item no centro do contêiner*/
+    align-items:center;/*alinhou o item no centro vertical do contêiner.*/
+}
+
+#pond {
+    display: flex;
+    justify-content:space-around;/*Colocando os itens sapos com espaçamento igual ao redor deles*/
+    align-items:flex-end;/*Colocando os itens no final do container*/
+}
+
+
+/*direção em que os itens são colocados no contêiner*/
+#pond {
+    display: flex;
+    flex-direction:row-reverse;/*os itens são posicionados opostos à direção do texto.*/
+}
+
+#pond {
+    display: flex;
+    flex-direction:column;/*Os itens são colocados de cima para baixo.*/
+}
+
+#pond {
+    display: flex;
+    flex-direction:row-reverse; /*os itens são posicionados opostos à direção do texto.*/
+    justify-content:flex-end; /* os itens são alinhados ao lado direito do contêiner.*/
+    
+}
+
+#pond {
+    display: flex;
+    flex-direction:column; /* Os itens são colocados de cima para baixo.*/
+    justify-content:flex-end; /*os itens são alinhados ao lado direito do contêiner*/
+}
+#pond {
+    display: flex;
+    flex-direction:column-reverse;/*inverteu as cores do sapo, colocando-os de cima para baixo*/
+    justify-content: space-between;/*alinhou os sapos com espaçamento igual entre eles*/
+}
+#pond {
+    display: flex;
+    flex-direction: row-reverse;/*inverti as cores do sapos, posicionando opostos à direção do texto.*/
+    justify-content:center;/*alinhou os itens no centro do contêiner*/
+    align-items:flex-end;/*os itens sapos são alinhados ao fundo do contêiner*/
+}
+
+
+
+/*Às vezes, inverter a ordem das linhas ou colunas de um contêiner não é suficiente. Nesses casos, podemos aplicar a propriedade do pedido a itens individuais. Por padrão, os itens têm um valor de 0, mas podemos usar essa propriedade para defini-la também como um valor inteiro positivo ou negativo (-2, -1, 0, 1, 2).
+
+Use a propriedade order para reordenar as rãs de acordo com seus lírios.*/
+#pond {
+    display: flex;
+}
+.yellow {
+  order:2;/*inverteu as rãs para suas respectivas cores de lirios*/
+}
+/**/
+#pond {
+    display: flex;
+}
+  
+.red {
+    order:-2; /*inverteu as rãs para suas respectivas cores de lirios*/
+}
+
+/**/
+#pond {
+    display: flex;
+    align-items: flex-start;
+}
+  
+.yellow {
+    align-self:flex-end;/*alinhou dentro do item especificado*/
+  }
+
+/**/
+#pond {
+    display: flex;
+    align-items: flex-start;
+  }
+.yellow {
+    order:3; /*inverteu as rãs */
+    align-self:flex-end;/*e alinhou os outros itens alinhou dentro do item especificado*/
+  }
+/**/
+
+/*Ah não! Os sapos são todos espremidos em uma única fileira de nenúfares. Espalhe-os usando a propriedade flex-wrap, que aceita os seguintes valores:*/
+#pond {
+    display: flex;
+    flex-wrap: wrap;/*Os itens são dispostos em linhas adicionais.*/
+  }
+
+  /**/
+#pond {
+    display: flex;
+    flex-direction:column;/*Os itens são colocados de cima para baixo.*/
+    flex-wrap:wrap;/*Os itens são dispostos em linhas adicionais.*/
+}
+
+
+/*As duas propriedades flex-direction e flex-wrap são usadas com tanta frequência juntas que a propriedade abreviada flex-flow foi criada para combiná-las. Esta propriedade abreviada aceita o valor de uma das duas propriedades separadas por um espaço.
+
+Por exemplo, você pode usar flex-flow: row wrap para definir linhas e envolvê-las.*/
+#pond {
+    display: flex;
+    flex-wrap:wrap;/*Os itens são dispostos em linhas adicionais.*/
+  }
+
+
+  /*As rãs estão espalhadas por todo o tanque, mas os nenúfares estão agrupados no topo. Você pode usar o alinhamento de conteúdo para definir como várias linhas são espaçadas umas das outras. Esta propriedade assume os seguintes valores:
+
+    flex-start: as linhas são embaladas na parte superior do contêiner.
+    flex-end: as linhas são embaladas no fundo do contêiner.
+    centro: as linhas são embaladas no centro vertical do contêiner.
+    espaço entre: as linhas são exibidas com espaçamento igual entre elas.
+    espaço ao redor: as linhas são exibidas com espaçamento igual ao redor delas.
+    esticar: as linhas são esticadas para caber no contêiner.
+    
+    Isso pode ser confuso, mas o align-content determina o espaçamento entre as linhas, enquanto o align-items determina como os itens como um todo são alinhados dentro do contêiner. Quando há apenas uma linha, o alinhamento de conteúdo não tem efeito.*/
+#pond {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;/*as linhas são embaladas na parte superior do contêiner.*/
+  
+  }
+
+  /**/
+  #pond {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;/*as linhas são embaladas no fundo do contêiner.*/
+  }
+
+  /**/
+  #pond {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column-reverse;/*inverteu as cores do sapo, colocando-os de cima para baixo*/
+    align-content:center;/*centralizou*/
+  }
+
+  /*Traga os sapos para casa uma última vez usando as propriedades CSS que você aprendeu:
+
+        justify-content
+        align-items
+        flex-direction
+        order
+        align-self
+        flex-wrap
+        flex-flow
+        align-content*/
+
+     #pond {
+        display: flex;
+        justify-content:center;/*alinhou os itens no centro do contêiner*/
+        align-items:center;/*alinhou o item no centro vertical do contêiner.*/
+        flex-direction:column-reverse;/*inverteu as cores do sapo, colocando-os de cima para baixo*/
+        order:-3;/*inverteu as rãs para suas respectivas cores de lirios*/
+        align-self:center;/*centralizou*/
+        flex-wrap:wrap-reverse;
+        flex-flow:flex-direction; /*no exercicio acusou correto, aqui dá erro*/
+        align-content:space-between;/*espaçamento igual entre eles*/
+     }
