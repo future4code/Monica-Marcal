@@ -1,0 +1,99 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/*#main-container { flex: 2 0px; } não inverteu nada
+  .blue-block{ order: 3; }
+  .yellow-block{ order: 2; }
+  .green-block { order: 5; }
+  .black-block  { order: 4; }
+  .white-block { order: 6; }*/
+
+div {
+    border: 1px solid black;
+   
+}
+
+#first-block {
+    display: flex;
+    background-color: red;
+    margin: 0 auto;
+    padding: 5px;
+    min-height: 100px;
+    justify-content: center;
+    
+
+   
+}
+
+
+.blue-block {
+    display: flex;
+    background-color: blue;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content:  flex-start;
+    margin: 0 auto;   
+    padding: 5px;
+    min-height: 100px;
+  
+    width: 20em;
+  
+    
+}
+    
+    
+    
+
+
+.yellow-block {
+    display: flex;
+    background-color: yellow;
+    margin: 0 auto;
+    padding: 5px;
+    min-height: 100px;
+    flex: 0 0 12em;
+    width: 20em;
+    align-self:  flex-start;
+    justify-content: center;
+  
+}
+
+.green-block {
+    background-color: green;
+    margin: 0 auto;
+    padding: 5px;
+    min-height: 100px;
+    flex: 0 0 12em;
+    width: 20em;
+    justify-content: center;
+     display: flex;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100px;
+    flex: 0 0 20em;
+    width: 30em;
+    justify-content: center;
+     display: flex;
+}
+
+.white-block {
+    background-color: white;
+    margin: 0 auto;
+    padding: 5px;
+    min-height: 100px;
+    flex: 0 0 12em;
+    width: 20em;
+    justify-content: center;
+     display: flex;
+   
+}
