@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.box {
+    width: 100%;
+    background: red;
+    flex-grow: 1;
+}
+.name{
+    font-size: 1.8em;
+    text-align:left;
+    width:20%;
+    color: white;
+}
+
+.botao{
+    text-align: right;
+    width:70%;
+}
+
+.blocos-videos {
+    width: 100%;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.blocos-videos>div:first-child {
+    flex-grow: 2;
+    margin: 0px;
+    height: 100%;
+    border: none;
+}
+
+.blocos-videos div {
+    flex-grow: 1;
+    margin: 10px;
+    height: 100%;
+    
+}
+
+
+footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
