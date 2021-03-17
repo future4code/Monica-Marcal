@@ -1,0 +1,16 @@
+{
+  "name": "semana15-nodejs",
+  "version": "1.0.0",
+  "description": "introducao ao node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "keywords": [
+    "npm",
+    "epps"
+  ],
+  "author": "monica",
+  "license": "ISC"
+}
