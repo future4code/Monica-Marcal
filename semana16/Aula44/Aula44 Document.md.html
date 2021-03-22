@@ -1,0 +1,161 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Aula44 Document.md</title><style></style></head><body id="preview">
+<h1 class="code-line" data-line-start=0 data-line-end=1><a id="Exercicio_1_0"></a>Exercicio 1</h1>
+<h3 class="code-line" data-line-start=1 data-line-end=2><a id="Tabela_de_atores_Guardar_as_seguintes_informaes_id_nome_salrio_data_de_nascimento_e_sexo_que_possui_as_opes_female_e_male_1"></a>Tabela de atores: Guardar as seguintes informações: id, nome, salário, data de nascimento e sexo (que possui as opções female e male)</h3>
+<p class="has-line-data" data-line-start="3" data-line-end="4">a. Nesta tabela, utilizamos o <code>FLOAT</code> para declarar o salário, porque esta é uma forma de representar um número não inteiro em uma tabela. Explique os demais comandos que estão nessa query.*</p>
+<h3 class="code-line" data-line-start=4 data-line-end=5><a id="Resposta_4"></a>Resposta:</h3>
+<ul>
+<li class="has-line-data" data-line-start="5" data-line-end="6">Date representa uma data</li>
+<li class="has-line-data" data-line-start="6" data-line-end="8">varchar strings de no maxino n caracteres</li>
+</ul>
+<h3 class="code-line" data-line-start=8 data-line-end=9><a id="b_O_comando_SHOW__bem_til_para_nos_prover_informaes_sobre_bancos_tabelas_e_mais_Utilize_os_comandos_SHOW_DATABASES_e_SHOW_TABLES_Explique_os_resultados_8"></a>b. O comando <code>SHOW</code> é bem útil para nos prover informações sobre bancos, tabelas, e mais. Utilize os comandos: <code>SHOW DATABASES</code> e <code>SHOW TABLES</code>. Explique os resultados.*</h3>
+<h3 class="code-line" data-line-start=9 data-line-end=10><a id="Resposta_9"></a>Resposta:</h3>
+<ul>
+<li class="has-line-data" data-line-start="10" data-line-end="11">SHOW DATABASES: retornou meu database epps-monica-marcal</li>
+<li class="has-line-data" data-line-start="11" data-line-end="13">SHOW TABLES: retornou a tabela Actor</li>
+</ul>
+<h3 class="code-line" data-line-start=13 data-line-end=14><a id="c_O_comando_DESCRIBE_pode_ser_usado_para_ver_estrutura_de_uma_tabela_Utilize_o_comando__DESCRIBE_Actor_e_explique_os_resultados_13"></a>c. O comando <code>DESCRIBE</code> pode ser usado para ver estrutura de uma tabela. Utilize o comando <code>DESCRIBE Actor</code> e explique os resultados.*</h3>
+<h3 class="code-line" data-line-start=14 data-line-end=15><a id="Resposta_14"></a>Resposta:</h3>
+<ul>
+<li class="has-line-data" data-line-start="15" data-line-end="16">DESCRIBE Actor: retornou minha tabela com os dados do Actor,</li>
+<li class="has-line-data" data-line-start="16" data-line-end="22">field - type - null - key - default -extra<br>
+id , VARCHAR(255) , NO , PRi , null<br>
+name, VARCHAR(255), NO, - , null<br>
+salary , FLOAT , NO , - ,null<br>
+birth_date, DATE, NO, - , null<br>
+gender, VARCHAR(6), NO, - ,null</li>
+</ul>
+<h1 class="code-line" data-line-start=24 data-line-end=25><a id="Exerccio_2_24"></a>Exercício 2</h1>
+<h3 class="code-line" data-line-start=25 data-line-end=26><a id="Colocar_dados_nessa_tabela_Atentese_a_3_fatos_nessa_query_25"></a>Colocar dados nessa tabela, Atente-se a 3 fatos nessa query:</h3>
+<ol>
+<li class="has-line-data" data-line-start="26" data-line-end="27">A ordem dos valores (<code>VALUES</code>) é definida pela lista colocada depois do nome da tabela (<code>ACTOR</code>): <code>(id, name, salary, birth_date)</code>.</li>
+<li class="has-line-data" data-line-start="27" data-line-end="28">Os valores <code>VARCHAR</code> (strings) devem ser indicados com <code>&quot;</code></li>
+<li class="has-line-data" data-line-start="28" data-line-end="30">As datas seguem o padrão: <code>YYYY-MM-DD</code></li>
+</ol>
+<h3 class="code-line" data-line-start=30 data-line-end=31><a id="aEscreva_uma_query_que_crie_a_atriz_Glria_Pires_com_o_id_002_salrio_R1200000_e_data_de_nascimento_23_de_Agosto_de_1963_30"></a>a.Escreva uma query que crie a atriz <code>Glória Pires</code>, com o id <code>002</code>, salário R$1.200.000 e data de nascimento 23 de Agosto de 1963*</h3>
+<h3 class="code-line" data-line-start=31 data-line-end=32><a id="Resposta_31"></a>Resposta:</h3>
+<ul>
+<li class="has-line-data" data-line-start="32" data-line-end="40">(<br>
+“002”,<br>
+“Glória Pires”,<br>
+120000,<br>
+“1963-08-23”,<br>
+“female”<br>
+);</li>
+</ul>
+<h3 class="code-line" data-line-start=40 data-line-end=41><a id="b_Escreva_uma_query_que_tente_adicionar_um_outro_elemento_a_tabela_com_o_mesmo_id_do_item_anterior_002_Isso_gerar_um_erro_Anote_a_mensagem_de_erro_traduza_pode_usar_o_Google_Tradutor_diretamente_e_explique_porque_esse_erro_aconteceu_40"></a>b. Escreva uma query que tente adicionar um outro elemento a tabela com o mesmo id do item anterior <code>002</code>. Isso gerará um erro. Anote a mensagem de erro, traduza (pode usar o Google Tradutor diretamente) e explique porque esse erro aconteceu.*</h3>
+<h3 class="code-line" data-line-start=41 data-line-end=42><a id="Resposta_41"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="42" data-line-end="44">-Error Code: 1062. Duplicate entry ‘001’ for key ‘PRIMARY’ = Código de erro: 1062. Entrada duplicada ‘001’ para a chave ‘PRIMARY’<br>
+Não podehaver dois IDs iguais.</p>
+<h4 class="code-line" data-line-start=45 data-line-end=46><a id="Tente_usar_as_queries_abaixo_Voc_vai_reparar_que_elas_vo_gerar_um_erro_Anote_as_mensagens_de_erro_traduza_e_explique_porque_esses_erros_aconteceram_Por_fim_corrija_individualmente_cada_query_para_que_funcione_45"></a>Tente usar as queries abaixo. Você vai reparar que elas vão gerar um erro. Anote as mensagens de erro, traduza e explique porque esses erros aconteceram. Por fim, corrija individualmente cada query para que funcione.</h4>
+<h3 class="code-line" data-line-start=46 data-line-end=47><a id="c_46"></a>c.</h3>
+<p class="has-line-data" data-line-start="48" data-line-end="56">INSERT INTO Actor (id, name, salary)<br>
+VALUES(<br>
+“003”,<br>
+“Fernanda Montenegro”,<br>
+300000,<br>
+“1929-10-19”,<br>
+“female”<br>
+);</p>
+<h3 class="code-line" data-line-start=56 data-line-end=57><a id="Resposta_56"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="57" data-line-end="60">Erro Code: 1136 Column count doesn t match value count at row 1<br>
+Código de erro: 1136 A contagem de colunas não corresponde à contagem de valores na linha 1<br>
+O erro se refere que faltou os dados: birth_date, gender</p>
+<ul>
+<li class="has-line-data" data-line-start="60" data-line-end="69">INSERT INTO Actor (id, name, salary,birth_date, gender)<br>
+VALUES(<br>
+“003”,<br>
+“Fernanda Montenegro”,<br>
+300000,<br>
+“1929-10-19”,<br>
+“female”<br>
+);</li>
+</ul>
+<h3 class="code-line" data-line-start=69 data-line-end=70><a id="d_69"></a>d.</h3>
+<p class="has-line-data" data-line-start="70" data-line-end="77">INSERT INTO Actor (id, salary, birth_date, gender)<br>
+VALUES(<br>
+“004”,<br>
+400000,<br>
+“1949-04-18”,<br>
+“male”<br>
+);</p>
+<h3 class="code-line" data-line-start=78 data-line-end=79><a id="Resposta_78"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="79" data-line-end="90">Error Code: 1364. Field ‘name’ doesn’t have a default value<br>
+Código de erro: 1364. O campo ‘nome’ não tem um valor padrão<br>
+Precisa especificar o name, porque name está adicionado na nossa tabela.<br>
+INSERT INTO Actor (id, name, salary, birth_date, gender)<br>
+VALUES(<br>
+“004”,<br>
+“bob”,<br>
+400000,<br>
+“1949-04-18”,<br>
+“male”<br>
+);</p>
+<h3 class="code-line" data-line-start=91 data-line-end=92><a id="e_91"></a>e.</h3>
+<p class="has-line-data" data-line-start="92" data-line-end="100">INSERT INTO Actor (id, name, salary, birth_date, gender)<br>
+VALUES(<br>
+“005”,<br>
+“Juliana Paes”,<br>
+719333.33,<br>
+1979-03-26,<br>
+“female”<br>
+);</p>
+<h3 class="code-line" data-line-start=100 data-line-end=101><a id="Resposta_100"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="101" data-line-end="112">Error Code: 1292. Incorrect date value: ‘1950’ for column ‘birth_date’ at row 1<br>
+Código de erro: 1292. Valor de data incorreto: ‘1950’ para a coluna ‘birth_date’ na linha 1<br>
+o erro ocorreu pelo ponto no salary e sem as aspas no birth_date.<br>
+INSERT INTO Actor (id, name, salary, birth_date, gender)<br>
+VALUES(<br>
+“005”,<br>
+“Juliana Paes”,<br>
+71933333,<br>
+“1979-03-26”,<br>
+“female”<br>
+);</p>
+<h3 class="code-line" data-line-start=112 data-line-end=113><a id="e_Por_fim_crie_mais_um_ator_e_mais_uma_atriz_e_prossiga_para_os_prximos_exerccios_112"></a>e. Por fim, crie mais um ator e mais uma atriz e prossiga para os próximos exercícios.</h3>
+<p class="has-line-data" data-line-start="113" data-line-end="137">INSERT INTO Actor (id, name, salary, birth_date, gender)<br>
+VALUES(<br>
+“009”,<br>
+“Fernanda Montenegro”,<br>
+300000,<br>
+“1929-10-19”,<br>
+“female”<br>
+);<br>
+INSERT INTO Actor (id, name, salary, birth_date, gender)<br>
+VALUES(<br>
+“010”,<br>
+“Antônio Fagundes”,<br>
+400000,<br>
+“1949-04-18”,<br>
+“male”<br>
+);<br>
+INSERT INTO Actor (id, name, salary, birth_date, gender)<br>
+VALUES(<br>
+“011”,<br>
+“Juliana Paes”,<br>
+719333.33,<br>
+“1979-03-26”,<br>
+“female”<br>
+);</p>
+<h1 class="code-line" data-line-start=138 data-line-end=139><a id="Exerccio_3_138"></a>Exercício 3</h1>
+<h3 class="code-line" data-line-start=139 data-line-end=140><a id="a_Escreva_uma_query_que_retorne_todas_as_informaes_das_atrizes_139"></a>a. Escreva uma query que retorne todas as informações das atrizes*</h3>
+<h3 class="code-line" data-line-start=140 data-line-end=141><a id="Resposta_140"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="141" data-line-end="142">SELECT id, salary, name, birth_date, gender from Actor WHERE gender = “female”</p>
+<h3 class="code-line" data-line-start=143 data-line-end=144><a id="b_Escreva_uma_query_que_retorne_o_salrio_do_ator_com_o_nome_Tony_Ramos_143"></a>b. Escreva uma query que retorne o salário do ator com o nome <code>Tony Ramos</code>*</h3>
+<h3 class="code-line" data-line-start=144 data-line-end=145><a id="Resposta_144"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="145" data-line-end="147">Não funcionou corretamente<br>
+SELECT id, salary from Actor WHERE id = “012”</p>
+<h3 class="code-line" data-line-start=148 data-line-end=149><a id="c_Escreva_uma_query_que_retorne_todas_as_informaes_que_tenham_o_gender_com_o_valor_invalid_Explique_o_resultado_148"></a>c. Escreva uma query que retorne todas as informações que tenham o <code>gender</code> com o valor <code>&quot;invalid&quot;</code>. Explique o resultado.*</h3>
+<h3 class="code-line" data-line-start=149 data-line-end=150><a id="Resposta_149"></a>Resposta:</h3>
+<hr>
+<h3 class="code-line" data-line-start=153 data-line-end=154><a id="d_Escreva_uma_query_que_retorne_o_id_nome_e_salrio_de_todos_que_tenham_o_salrio_com_o_valor_mximo_de_R500000_153"></a>d. Escreva uma query que retorne o id, nome e salário de todos que tenham o salário com o valor máximo de R$500.000*</h3>
+<h3 class="code-line" data-line-start=154 data-line-end=155><a id="Resposta_154"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="155" data-line-end="157">Não funcionou corretamente<br>
+SELECT id, salary, name from Actor WHERE gender &gt;= “500.000”;</p>
+<h3 class="code-line" data-line-start=159 data-line-end=160><a id="e_Tente_usar_a_query_abaixo_Voc_vai_reparar_que_ela_vai_gerar_um_erro_Anote_a_mensagem_de_erro_traduza_pode_usar_o_Google_Tradutor_diretamente_e_explique_porque_esse_erro_aconteceu_Por_fim_corrija_individualmente_a_query_para_que_funcione_teste_o_comando_e_anoteo_tambm_como_resposta_159"></a>e. Tente usar a query abaixo. Você vai reparar que ela vai gerar um erro. Anote a mensagem de erro, traduza (pode usar o Google Tradutor diretamente) e explique porque esse erro aconteceu. Por fim, corrija individualmente a query para que funcione, teste o comando e anote-o também como resposta*</h3>
+<p class="has-line-data" data-line-start="160" data-line-end="161">SELECT id, nome from Actor WHERE id = “002”</p>
+<h3 class="code-line" data-line-start=161 data-line-end=162><a id="Resposta_161"></a>Resposta:</h3>
+<p class="has-line-data" data-line-start="162" data-line-end="166">Error Code: 1054. Unknown column ‘nome’ in ‘field list’<br>
+Código de erro: 1054. Coluna desconhecida ‘nome’ na ‘lista de campos’<br>
+Estava em portgues o name. Não consegue reconhecer pois são duas palavras diferentes.<br>
+SELECT id, name from Actor WHERE id = “002”</p>
+</body></html>
